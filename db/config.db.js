@@ -1,6 +1,7 @@
 const {
     client,
-    connection
+    connection,
+    closeConnection,
 } = require('./config-mssql.db');
 require('dotenv').config();
 
@@ -12,7 +13,8 @@ const providerFacade = {};
 // Proxy methods to original API.
 if (providerKey === 'mssql') {
     providerFacade.createConnection = connection;
-    providerFacade.createClient = client
+    providerFacade.createClient = client;
+    providerFacade.close = closeConnection
 }
 
 // Adapter - map methods to different API.
@@ -46,9 +48,13 @@ if (providerKey === 'pg') {
             }
         }
     }
+    providerFacade.close = () => {
+        throw new Error('Not implemented!')
+    }
 }
 
 module.exports = {
     databaseConnection: providerFacade.createConnection,
     databaseClient: providerFacade.createClient,
+    databaseClose: providerFacade.close,
 };

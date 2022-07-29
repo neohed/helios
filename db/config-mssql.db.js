@@ -18,7 +18,12 @@ client.on('error', err => {
     console.error(err)
 });
 
+async function closeConnection() {
+    await client.close()
+}
+
 module.exports = {
     client,
-    connection
+    connection,
+    closeConnection,
 };

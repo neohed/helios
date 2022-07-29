@@ -1,4 +1,9 @@
 # helios
+
 Script generator for SQL Server to Aurora (PostgreSQL) migration
 
-Try: https://dbeaver.io/
+
+## TODO
+
+* https://www.convert-in.com/docs/pgs2mss/types-mapping.htm
+* https://dbeaver.io/
