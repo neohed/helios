@@ -36,4 +36,4 @@ node_modules
 # env file
 .env
 
-/scripts/
+/scripts/*.sql
