@@ -2,7 +2,7 @@
   "name": "helios",
   "version": "1.0.0",
   "description": "Script generator for SQL Server to Aurora (PostgreSQL) migration",
-  "main": "index.js",
+  "main": "analyzeTables.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

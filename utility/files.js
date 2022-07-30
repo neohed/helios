@@ -9,11 +9,6 @@ function createTextFile(filePath, contents) {
     });
 }
 
-function uniqueFileName(filename) {
-    return filename + '-' + (+new Date()) + '.txt';
-}
-
 module.exports = {
     createTextFile,
-    uniqueFileName,
 }
