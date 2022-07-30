@@ -68,13 +68,15 @@ async function createTablesScript(batchNo) {
             scriptLines.push(');\n')
         })
 
-        createTextFile(path.join(__dirname, `scripts/${batchNo}-01-tables.sql`), scriptLines.join('\n'))
+        createTextFile(
+            path.join(__dirname, `scripts/${batchNo}-01-tables.sql`),
+            scriptLines.join('\n')
+        )
     }))
 
     //TODO
     //1 Update code to create other "keyConstraints"
     //2 Add foreign key constraints
-    //3 Write files
     //4 Determine dependency resolution order
     //5 Output data insert statements
 }
