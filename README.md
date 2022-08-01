@@ -7,3 +7,6 @@ Script generator for SQL Server to Aurora (PostgreSQL) migration
 
 * https://www.convert-in.com/docs/pgs2mss/types-mapping.htm
 * https://dbeaver.io/
+
+https://www.postgresql.org/docs/9.1/sql-createindex.html
+https://www.postgresql.org/docs/9.1/sql-createtable.html
