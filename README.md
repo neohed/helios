@@ -9,4 +9,3 @@ Script generator for SQL Server to Aurora (PostgreSQL) migration
 * https://dbeaver.io/
 
 https://www.postgresql.org/docs/9.1/sql-createindex.html
-https://www.postgresql.org/docs/9.1/sql-createtable.html
